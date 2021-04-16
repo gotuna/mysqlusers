@@ -32,10 +32,18 @@ INSERT INTO `users` (`email`, `name`, `phone`, `password_hash`) VALUES
 
 ## Usage
 ```
+// open mysql connection
 client, err := sql.Open("mysql", "dbuser:dbpass@/dbname?charset=utf8")
 if err != nil {
 	panic(err)
 }
-userRepository := mysqlusers.NewRepository(client)
+
+// create repository instance
+repo := mysqlusers.NewRepository(client)
+
+// use in GoTuna application
+app := gotuna.App{
+	UserRepository: repo,
+}
 ```
 
