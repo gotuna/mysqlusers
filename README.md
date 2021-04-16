@@ -32,6 +32,10 @@ INSERT INTO `users` (`email`, `name`, `phone`, `password_hash`) VALUES
 
 ## Usage
 ```
+go get github.com/gotuna/mysqlusers
+```
+
+```
 // open mysql connection
 client, err := sql.Open("mysql", "dbuser:dbpass@/dbname?charset=utf8")
 if err != nil {
