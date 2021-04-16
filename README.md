@@ -1,4 +1,4 @@
-# Mysql User Provider
+# Example Mysql User Provider
 Example GoTuna UserProvider for Mysql
 
 ## Create mysql table
