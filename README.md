@@ -15,9 +15,12 @@ CREATE TABLE `users` (
 )
 ```
 
-## Insert sample records
+## Insert sample users with credentials
+```
 john@example.com / test123
 bob@example.com / test456
+```
+
 ```
 INSERT INTO `users` (`email`, `name`, `phone`, `password_hash`) VALUES
 ('john@example.com', 'John', '555-0001', '$2a$10$lafA0tVo8mV8yyNaOhs.J.XUzpwkEPVhJILPQeST14jbkbolPQCua');
