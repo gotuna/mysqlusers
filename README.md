@@ -51,3 +51,14 @@ app := gotuna.App{
 }
 ```
 
+## User type
+```
+type DBUser struct {
+	ID           string
+	Email        string
+	Name         string
+	Phone        string
+	PasswordHash string
+}
+```
+
